@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table Finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p id="logo">Table Finder</p>
+    <p>Pick your table now</p>
+  </header>
+
+  <section id="content">
+    <div id="square">
+      <div class="circle 1 available">1</div>
+      <div class="circle 2 available">2</div>
+      <div class="circle 3 available">3</div>
+      <div class="circle 4 available">4</div>
+      <div class="circle 5 available">5</div>
+      <div class="circle 6 available">6</div>
+      <div class="circle 7 available">7</div>
+      <div class="circle 8 available">8</div>
+      <div class="circle 9 available">9</div>
+    </div>
+  </section>
+
+  <section id="form">
+    <span class="close">&times;</span>
+    <p id ="newRes">New Reservation<p>
+    <p>Table Number: <span id="tabNum">NA</span></p>
+    <input type="text" name="Name" id="name" placeholder="Name">
+    <input type="number" name="Phone" id="phone" placeholder="Phone">
+    <input type="number" name="howMany" id="howMany" placeholder="Guests">
+    <button id="submit">SAVE</button>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
