@@ -48,6 +48,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* align-content: center; */
   border-radius: 100%;
   width: 3em;
   height: 3em;
@@ -62,9 +63,9 @@ section {
 }
 .reserved {
   background-color: #adaaaa;
-  cursor: not-allowed;
   color:#ffffff;
-  pointer-events: none;
+  /* cursor: not-allowed; */
+  /* pointer-events: none; */
 }
 
 #form {
@@ -117,6 +118,16 @@ button {
 
 }
 
+.tooltip {
+  position: absolute;
+  z-index: 999999999;
+  background-color: #aaa;
+  color: #000000;
+  font-size: .6em;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 428px) {
   #logo {
   font-size: 3em;
@@ -135,6 +146,9 @@ button {
   .circle {
     width:4em;
     height:4em;
+  }
+  .tooltip {
+    font-size: .8em;
   }
 }
 
@@ -158,6 +172,9 @@ button {
     margin: 32% auto; 
     font-size: 1em;
   }
+  .tooltip {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
@@ -174,6 +191,6 @@ button {
   }
   #form {
     margin: 15% auto;
-    font-size: 1.2em; 
+    font-size: 1.3em; 
   }
 }
