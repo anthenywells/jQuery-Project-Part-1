@@ -1,15 +1,24 @@
 "use strict";
 
+
+
+
 //opens form, changes tables class
 $(".available").on("click", function(){
-  $(this).removeClass("available").addClass("reserved");
+  let selectedTable = this.id;
+  console.log(selectedTable)
   $("#form").css("display", "flex");
+  $("#tabNum").text(`${$(this).get(0).id}`);
+  $("#submit").on("click", function(){
+    $(selectedTable).addClass("reserved");
+  });
 });
+
 //X closes form
 $(".close").on("click", function(){
   $("#form").css("display", "none")
 })
-//X closes form
+// submit closes form
 $("#submit").on("click", function(){
   $("#form").css("display", "none")
 })
@@ -19,4 +28,3 @@ $(window).on("click", function(e){
       $('#form').css("display", "none");
   }
 });
-
